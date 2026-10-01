@@ -63,6 +63,10 @@ Model YOLO11 dengan **5 kelas**:
 
 ![Webcam Detection](screenshots/detection-webcam.png)
 
+
+### History
+![History](screenshots/history.png)
+
 ---
 
 ## Tech Stack
