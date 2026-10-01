@@ -125,7 +125,7 @@ export default function Detection() {
                 >
                   <p className="dropzone-title">Drop image di sini</p>
                   <p className="dropzone-hint">atau klik untuk memilih file</p>
-                  <p className="dropzone-meta">JPG · PNG · WEBP — maks 10 MB</p>
+                  <p className="dropzone-meta">JPG · PNG · WEBP — maks 5 MB</p>
                   <input
                     ref={inputRef}
                     type="file"
