@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: ai-safety-backend
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    envVars:
+      - key: DEBUG
+        value: "False"
+      - key: TRUST_PROXY_HEADERS
+        value: "True"
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: MODEL_PATH
+        value: "ai/best.pt"
+    healthCheckPath: /health

@@ -1,0 +1,29 @@
+# Environment (semua level)
+**/.env
+**/.env.*
+!**/.env.example
+
+# Model weights
+**/best.pt
+!backend/ai/best.pt
+**/*.onnx
+**/*.engine
+
+# Node
+**/node_modules/
+**/dist/
+**/.vercel/
+
+# Python
+**/__pycache__/
+**/venv/
+**/.venv/
+
+# OS
+**/.DS_Store
+**/Thumbs.db
+
+# IDE
+**/.idea/
+**/.vscode/
+!**/.vscode/extensions.json
