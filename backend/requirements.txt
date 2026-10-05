@@ -4,7 +4,11 @@ python-multipart>=0.0.20
 pydantic>=2.10.0
 pydantic-settings>=2.6.0
 python-dotenv>=1.0.1
+
+# NOTE: torch/torchvision CPU-only di-install dulu di Dockerfile
+# agar tidak menarik CUDA (~2 GB) di Linux
 ultralytics>=8.3.0
+
 opencv-python-headless>=4.10.0
 pillow>=11.0.0
 numpy>=1.26.0

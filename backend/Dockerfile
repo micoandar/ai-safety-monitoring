@@ -16,6 +16,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         curl \
     && rm -rf /var/lib/apt/lists/*
 
+# Install CPU-only PyTorch dulu (sebelum ultralytics),
+# supaya pip tidak menarik versi CUDA yang besar (~2 GB).
+RUN pip install --index-url https://download.pytorch.org/whl/cpu \
+        torch torchvision
+
+# Install dependency lain
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
